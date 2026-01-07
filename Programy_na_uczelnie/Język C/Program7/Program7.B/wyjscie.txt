@@ -1,0 +1,6 @@
+Do drugiej tablicy zostalo dopisane 3 znakow.
+Wczytano 10 znakow
+Wszystkie znaki: 10
+Czarne znaki: 10
+Liczba linii: 1
+Liczba slow: 1
