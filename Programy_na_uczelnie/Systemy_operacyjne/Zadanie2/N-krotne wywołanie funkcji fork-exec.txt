@@ -1,0 +1,2 @@
+Przy n-krotnym wywołaniu funkcji fork-exec powstaje n+1 procesów, ponieważ każde wywołanie funkcji exec zastępuje kod procesu potomnego innym programem.
++1 to proces macierzysty wywołujący funkcję fork.

@@ -1,0 +1,9 @@
+			[Rodzic - PID: 715]
+		………………………………………………………………………………………
+		|		|		|
+		|		|		|
+		|		|		|
+	    [Potomek1]	    [Potomek2]	    [Potomek3]
+	    PID: 716	    PID: 717	    PID: 718
+	    PPID: 715	    PPID: 715	    PPID: 715
+	    PGID: 715	    PGID: 715	    PGID: 715
