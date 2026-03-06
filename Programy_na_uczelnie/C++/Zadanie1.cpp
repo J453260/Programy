@@ -12,4 +12,10 @@ int main(){
     cout<<maximum("a", "z")<<endl;
 
     return 0;
+
 }
+
+/*
+Zaimplementuj szablon funkcji maksimum() , wybierającej większy z dwóch argumentów.
+Argumenty są jednakowego typu i posiadają operator< .
+*/
