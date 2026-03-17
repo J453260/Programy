@@ -1,0 +1,7 @@
+Polimorfizm dynamiczny, czyli możliwość decydowania o tym jaka funkcja zostanie wywołana pod daną nazwą nie w momencie kompilacji (czyli pisania kodu), ale w samym momecie wywołania.
+
+Polimorfizm statyczny oznacza sytuację, w której kompilator już podczas kompilacji decyduje, która wersja metody lub funkcji zostanie użyta.
+
+Klasa abstrakcyjna to klasa w której nie można tworzyć obiektów. Służy jako wzorzec do innych klas.
+
+Metoda wirtualna to metoda, która nie może zostać nadpisana podczas dziedziczenia.
