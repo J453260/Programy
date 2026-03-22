@@ -1,0 +1,13 @@
+def nwd(a, b):
+    while b!=0:
+        temp = b
+        b = a % b
+        a = temp
+    return a
+
+
+liczby = int(input())
+
+for _ in range(liczby):
+    a, b = map(int, input().split())
+    print(nwd(a,b))
