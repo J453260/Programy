@@ -38,8 +38,6 @@ float LiczbaNajblizejSredniej(float a, float b, float c, float d, float e)
         liczba=e;
     }
 
-	cout<<"Liczba najblizej sredniej to: "<<liczba<<endl;
-
 	return liczba;
 }
 //m srednia
