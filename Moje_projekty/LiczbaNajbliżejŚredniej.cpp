@@ -45,6 +45,7 @@ float LiczbaNajblizejSredniej(float a, float b, float c, float d, float e)
 //z najmniejsza liczba
 int main()
 {
+	float a,b,c,d,e;
 	cout<<"Podaj 5 liczb oddzielonych spacja: ";
 	cin>>a>>b>>c>>d>>e;
 	cout<<"Liczba najblizej sredniej to: "<<LiczbaNajblizejSredniej(a, b, c, d, e);
