@@ -1,54 +1,72 @@
 #include <iostream>
 #include <cmath> //dla fabs
+#include <vector>
+#include <cassert>
 using namespace std;
 
-float LiczbaNajblizejSredniej(float a, float b, float c, float d, float e)
+float LiczbaNajblizejSredniej(vector<float> liczby)
 {
-    float m,s,f,g,h,i,j,z,liczba;
-    s=a+b+c+d+e;
-	m=s/5;
-	cout<<"Srednia podanych liczb to: "<<m<<endl;
-
-	f=fabs(a-m);
-	g=fabs(b-m);
-	h=fabs(c-m);
-	i=fabs(d-m);
-	j=fabs(e-m);
-
-	z=f;
-	liczba=a;
-	if (z>g)
+    float m,s,z,liczba,rozmiar;
+    s=0.0;
+    rozmiar = liczby.size();
+    for(float i : liczby)
     {
-        z=g;
-        liczba=b;
+        s+=i;
     }
-	if (z>h)
+	m=s/rozmiar;
+	vector<float> roznice;
+
+	for(float i : liczby)
     {
-        z=h;
-        liczba=c;
+        roznice.push_back(fabs(i-m));
     }
-	if (z>i)
-	{
-        z=g;
-        liczba=d;
+
+	z = roznice.front();
+	liczba = liczby.front();
+	int index = 0;
+
+	for(int i=0; i<roznice.size(); i++)
+    {
+        if(z>roznice[i])
+        {
+            z=roznice[i];
+            index = i;
+        }
     }
-	if (z>j)
-	{
-        z=g;
-        liczba=e;
-    }
+
+    liczba = liczby[index];
 
 	return liczba;
 }
-//m srednia
-//s suma
-//z najmniejsza liczba
+
 int main()
 {
-	float a,b,c,d,e;
-	cout<<"Podaj 5 liczb oddzielonych spacja: ";
-	cin>>a>>b>>c>>d>>e;
-	cout<<"Liczba najblizej sredniej to: "<<LiczbaNajblizejSredniej(a, b, c, d, e);
+    vector<float> liczby;
+    string wejscie;
+    cout<<"Podaj liczby oddzielonych spacja lub EXIT by zakonczyc: ";
+
+    while(true)
+    {
+        cin>>wejscie;
+        if(wejscie == "EXIT")
+        {
+            break;
+        }
+        liczby.push_back(stoi(wejscie));
+    }
+
+	cout<<"Liczba najblizej sredniej to: "<<LiczbaNajblizejSredniej(liczby);
 
 	return 0;
 }
+
+
+/*
+
+	Algorytm:
+	Nowy wektor na wartość bezwzględną z różnicy liczby i średniej.
+	Nowa zmienna na pierwszą liczbę.
+	Znajdź najmniejszą różnicę i przypisz do zmiennej "liczba" liczbę
+	dla najmniejszej średniej.
+
+*/
