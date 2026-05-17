@@ -1,4 +1,4 @@
-### Wykład
+### Zadania
 1. Zaimplementuj szablon is_class służący do sprawdzania czy dany typ jest klasą.
 
 2. Napisz szablon, który sprawdza czy jego parametr posiada typ stowarzyszony value_type, np.: has_value_type<std::vector<int> >::yes powinno mieć wartość true,
