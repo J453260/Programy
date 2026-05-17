@@ -10,4 +10,6 @@
 template<size_t N> double inner(double *x, double *y); 
 
 6.Rozszerz powyższy szablon tak, aby również typ elementów wektora był parametrem szablonu: 
-template<size_t N, typename T> T dot(T *x, T *y); 
+```
+template<size_t N, typename T> T dot(T *x, T *y);
+```
