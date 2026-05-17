@@ -1,3 +1,4 @@
+### Zadania
 1.Napisz szablon funkcji lub klasy wyliczający funkcję silnia. 
 
 2.Zaimplementuj szablon Pow<N,M> obliczający N^M.  
@@ -13,3 +14,6 @@ template<size_t N> double inner(double *x, double *y);
 ```
 template<size_t N, typename T> T dot(T *x, T *y);
 ```
+
+### Wykład
+https://wazniak.mimuw.edu.pl/index.php?title=Zaawansowane_CPP/Wyk%C5%82ad_8:_Metaprogramowanie
