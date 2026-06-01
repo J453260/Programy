@@ -1,4 +1,4 @@
-#Zadania
+# Zadania
 
 1.Podaj przykłady wykorzystania konceptu std::integral tak aby szablon funkcji działał
 poprawnie tylko dla typów zmiennych spełniających wymagania tego konceptu (np. funkcja gcd – największy wspólny dzielnik). 
