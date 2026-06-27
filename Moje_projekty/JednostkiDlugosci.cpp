@@ -22,7 +22,7 @@ void NaCentymetry()
 void NaCale()
 {
     double cm;
-    cout<<"Podaj wzrost: ";
+    cout<<"Podaj wzrost (w cm): ";
     cin>>cm;
     cm /= 30.48;
     int czescDziesietna = (int)cm;
