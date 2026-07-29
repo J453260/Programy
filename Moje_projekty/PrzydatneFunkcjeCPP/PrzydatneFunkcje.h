@@ -5,6 +5,7 @@ bool CzyMaPierwiastek(int a);
 void Trojki(int dol, int gora);
 int NWD(int a, int b);
 long NWW(int a, int b);
+void drawSus();
 
 #endif // PRZYDATNE_FUNKCJE
 
