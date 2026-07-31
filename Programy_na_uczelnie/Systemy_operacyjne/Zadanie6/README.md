@@ -1,6 +1,6 @@
-Autor: Jan Bajor
-Data: 24.04.2025
-Miejsce: Kraków
+# Autor: Jan Bajor
+# Data: 24.04.2025
+# Miejsce: Kraków
 
 Program realizuje problem wzajemnego wykluczania procesów używając semaforów.
 Program tworzy w pętli n procesów a następnie wysyła je do sekcji krytycznej. N jest podawane jako argument wejścia programu.
