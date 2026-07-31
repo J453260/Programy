@@ -1,6 +1,6 @@
-Autor: Jan Bajor
-Data: 04.04.2025r.
-Miejsce: Kraków
+# Autor: Jan Bajor
+# Data: 04.04.2025r.
+# Miejsce: Kraków
 
 Folder zawiera 1 program - Cw4.c realizujący problem "Producent-Konsument".
 Z pliku "Dane1.txt" producent pobiera dane, które później przekazuje do bufora.
