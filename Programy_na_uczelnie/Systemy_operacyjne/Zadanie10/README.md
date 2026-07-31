@@ -1,5 +1,7 @@
 Autor: Jan Bajor
+
 Data: 02.06.2025
+
 Miejsce: Kraków
 
 Folder zawiera 1 kod: Cw10.c, zawierający implementacje algorytmu piekarni wraz ze wzajemnym wykluczaniem wątków standardu POSIX.
