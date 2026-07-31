@@ -1,6 +1,6 @@
-Autor: Jan Bajor
-Data: 18.05.2025
-Miejsce: Kraków
+# Autor: Jan Bajor
+# Data: 18.05.2025
+# Miejsce: Kraków
 
 Folder zawiera 5 kodów realizujących problem serwer-klient.
 Kody mqhelper.h i .c zawierają odpowiednio deklaracje i implementacje funkcji używanych do obsługi kolejek.
