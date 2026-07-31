@@ -1,6 +1,6 @@
-Autor: Jan Bajor
-Data: 02.05.2025
-Miejsce: Kraków
+# Autor: Jan Bajor
+# Data: 02.05.2025
+# Miejsce: Kraków
 
 Program zawiera 7 kodów realizujący problem producenta i konsumenta za pomocą semaforów i pamięci dzielonej.
 Producent otwiera plik wejściowy i czyta z niego dane.
