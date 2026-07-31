@@ -1,6 +1,6 @@
-Autor: Jan Bajor
-Data: 13.04.2025
-Miejsce: Kraków
+# Autor: Jan Bajor
+# Data: 13.04.2025
+# Miejsce: Kraków
 
 Katalog zawiera 3 kody: 5a Producent i Konsument
 
