@@ -1,0 +1,16 @@
+tid,user,amount,category
+T001,Jan,450.00,Electronics
+T002,Anna,120.50,Food
+T003,Piotr,890.00,Clothing
+T004,Jan,300.00,Food
+T005,Anna,95.75,Electronics
+T006,Maria,1200.00,Electronics
+T007,Jan,380.00,Clothing
+T008,Piotr,45.00,Food
+T009,Anna,850.00,Travel
+T010,Maria,200.00,Food
+T011,Jan,100.00,Books
+T012,Piotr,180.00,Electronics
+T013,Anna,75.00,Clothing
+T014,Maria,95.00,Books
+T015,Jan,50.00,Food

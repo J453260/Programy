@@ -1,0 +1,17 @@
+{
+  "total": 5031.25,
+  "users": {
+    "Anna": {"sum": 1141.25, "count": 4, "vip": true, "after_discount": 1027.12},
+    "Jan": {"sum": 1280.00, "count": 5, "vip": true, "after_discount": 1152.00},
+    "Maria": {"sum": 1495.00, "count": 3, "vip": true, "after_discount": 1345.50},
+    "Piotr": {"sum": 1115.00, "count": 3, "vip": true, "after_discount": 1003.50}
+  },
+  "categories": {
+    "Books": 195.00,
+    "Clothing": 1345.00,
+    "Electronics": 1925.75,
+    "Food": 715.50,
+    "Travel": 850.00
+  },
+  "error": ""
+}
