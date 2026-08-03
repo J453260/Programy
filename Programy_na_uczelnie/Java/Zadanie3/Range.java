@@ -1,11 +1,11 @@
 /**
- * Zakres/przedziaĹ liczb rzeczywistych.
+ * Zakres/przedział liczb rzeczywistych.
  */
 public interface Range {
 
     /*
     Wartość minimalna zakresu.
-            Returns:
+    Returns:
     początek zakresu
      */
 
