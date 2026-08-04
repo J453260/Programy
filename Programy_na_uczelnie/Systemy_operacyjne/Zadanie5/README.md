@@ -1,6 +1,10 @@
-# Autor: Jan Bajor
-# Data: 13.04.2025
-# Miejsce: Kraków
+# Laboratorium – Producent–Konsument z użyciem potoków nazwanych
+
+## Ćwiczenie 5 – Producent–Konsument: Potoki nazwane (FIFO)
+
+Autor: Jan Bajor
+Data: 13.04.2025
+Miejsce: Kraków
 
 Katalog zawiera 3 kody: 5a Producent i Konsument
 
@@ -15,3 +19,61 @@ Skompilowane pliki producenta i konsumenta.
 
 Argumenty wywołania programu są wpisywane w następującej strukturze:
 ./5a, Pierwszy plik tekstowy, Drugi plik tekstowy, Dolna granica przedziału, Górna granica przedziału, Rozmiar buforu producenta, Rozmiar buforu konsumenta, ./Producent, ./Konsument
+
+### Cel
+
+Zapoznanie się z komunikacją międzyprocesową (IPC) przy użyciu **potoków nazwanych (FIFO)** poprzez implementację problemu **Producent–Konsument**.
+
+---
+
+## Zadanie
+
+Przy pomocy potoków nazwanych systemu UNIX zaimplementuj problem **Producenta i Konsumenta** z **Ćwiczenia 4**.
+
+---
+
+## Zadanie a) Tworzenie potoku FIFO w programie
+
+Utwórz potok FIFO z poziomu programu.
+
+Następnie uruchom procesy Producenta i Konsumenta:
+
+- w procesie macierzystym i potomnym,
+- **lub**
+- w dwóch procesach potomnych.
+
+### Wymagania
+
+- Potok FIFO powinien zostać utworzony przez program.
+- Po zakończeniu działania programu potok powinien zostać usunięty.
+- Usuwanie potoku należy zrealizować w funkcji zarejestrowanej przy pomocy `atexit()`.
+
+---
+
+## Zadanie b) Komunikacja między niezależnymi procesami
+
+Sprawdź, że potoki FIFO umożliwiają komunikację pomiędzy **niezależnie uruchamianymi procesami**.
+
+### Wymagania
+
+1. Utwórz potok FIFO z poziomu wiersza poleceń.
+2. Uruchom proces Producenta oraz Konsumenta niezależnie z poziomu powłoki, np. w dwóch różnych terminalach.
+
+Można wykorzystać polecenie:
+
+```bash
+xterm -hold -title "nazwa okna" -e nazwa_programu &
+```
+
+dla każdego z procesów.
+
+---
+
+## Makefile
+
+Zaleca się umieszczenie w pliku **Makefile** poleceń:
+
+- tworzących potok FIFO,
+- uruchamiających Producenta,
+- uruchamiających Konsumenta,
+- usuwających potok FIFO po zakończeniu działania programu.
