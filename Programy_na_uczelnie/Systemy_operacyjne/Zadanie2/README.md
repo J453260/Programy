@@ -1,3 +1,5 @@
+# Ćwiczenie 2 – Uruchamianie programów (`exec`)
+
 Autor: Jan Bajor
 
 Data: 22.03.2025
@@ -11,3 +13,20 @@ Progam uruchamiany przez funkcję execlp wypisuję UID, GID, PID, PPIG i PGID pr
 Z linii koment należy również podać program do uruchomienia.
 Przykład:
 ./cw2 ./ID
+
+### Cel
+
+Zapoznanie się z rodziną funkcji `exec()` oraz zastępowaniem obrazu procesu.
+
+### Zadanie
+
+Zmodyfikuj program z ćwiczenia **1b** tak, aby:
+
+- komunikaty procesów potomnych były wypisywane przez program uruchamiany za pomocą funkcji `execlp()`,
+- nazwę programu uruchamianego przez `execlp()` przekazywać jako argument programu procesu macierzystego.
+
+---
+
+### Pytanie
+
+**Ile procesów powstanie przy n-krotnym wywołaniu sekwencji `fork()` + `exec()` i dlaczego?**
