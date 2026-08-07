@@ -1,0 +1,2 @@
+Mierzyliśmy najpierw pomiar baseline, zamknięte oczy i ruszanie gałkami ocznymi przy zamkniętych i otwartych oczach.
+Drugi pomiar to słuchanie dźwięków na słuchawkach na przemian w prawym i lewym uchu przy zamkniętych oczach.
