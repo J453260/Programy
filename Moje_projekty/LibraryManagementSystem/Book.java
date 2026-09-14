@@ -1,4 +1,5 @@
 public class Book {
+    private int id;
     private String title;
     private String author;
     private String isbn;
@@ -15,6 +16,12 @@ public class Book {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
+    }
+
+    public Book(int id, String title, String author, String isbn, boolean isAvailable) {
+        this(title, author, isbn);
+        this.id = id;
+        this.isAvailable = isAvailable;
     }
 
     public String getTitle(){
@@ -35,5 +42,10 @@ public class Book {
 
     public void setAvailable(boolean available){
         this.isAvailable = available;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%d] %s - %s (ISBN: %s) | Dostępna: %s", id, title, author, isbn, isAvailable ? "TAK" : "NIE");
     }
 }
