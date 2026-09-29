@@ -6,6 +6,7 @@ void Trojki(int dol, int gora);
 int NWD(int a, int b);
 long NWW(int a, int b);
 void drawSus();
+long long SymbolNewtona(int n, int k);
 
 #endif // PRZYDATNE_FUNKCJE
 
