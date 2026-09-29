@@ -82,3 +82,23 @@ void drawSus()
     cout << "                     ###       ###          ###      ###            " << endl;
     cout << "                      ############          #########               " << endl;
 }
+
+long long SymbolNewtona(int n, int k)
+{
+    if (k < 0 || k > n) return 0;
+    if (k == 0 || k == n) return 1;
+
+    if (k > n - k)
+    {
+        k = n - k;
+    }
+
+    long long wynik = 1;
+    for (int i = 1; i <= k; ++i)
+    {
+        wynik *= (n - i + 1);
+        wynik /= i;
+    }
+
+    return wynik;
+}
