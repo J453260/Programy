@@ -7,13 +7,13 @@ public class SzafkaZPolkami extends Szafka {
     // Mapa przechowująca pojemność dla każdej półki: Klucz to numer półki, Wartość to maksymalna liczba książek
     private Map<Integer, Integer> pojemnosciPolek = new HashMap<>();
 
-    private int aktualnaPolfka = -1;
+    private int aktualnaPolka = -1;
 
     @Override
     public void pojemnoscPolki(int przedmiotow) {
         // Implementacja metody pojemnoscPolki
-        if (aktualnaPolfka != -1) {
-            pojemnosciPolek.put(aktualnaPolfka, przedmiotow);
+        if (aktualnaPolka != -1) {
+            pojemnosciPolek.put(aktualnaPolka, przedmiotow);
         }
     }
 
