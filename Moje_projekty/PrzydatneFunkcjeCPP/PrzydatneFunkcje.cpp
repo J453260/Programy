@@ -6,34 +6,28 @@ using namespace std;
 bool CzyMaPierwiastek(int a)
 {
     int b = sqrt(a);
-    if(b*b == a)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return b * b == a;
 }
 
-void Trojki(int dol, int gora)
+void Trojki(int dol, int gora, vector<Trojka>& liczby)
 {
     int licznik = 0;
     for(int i = dol; i<= gora; i++)
     {
-        for(int j = i; j<= gora; j++)
+        for(int j = i; j <= gora; j++)
         {
             int z;
             z = i*i + j*j;
             if(CzyMaPierwiastek(z))
             {
-                cout<<i<<" "<<j<<" "<<sqrt(z)<<endl;
+                //cout<<i<<" "<<j<<" "<<sqrt(z)<<endl;
                 licznik++;
+                liczby.push_back({i, j, (int)sqrt(z)});
             }
         }
     }
 
-    cout<<endl<<"Jest ich: "<<licznik;
+    //cout<<endl<<"Jest ich: "<<licznik<<endl;
 }
 
 int NWD(int a, int b){
